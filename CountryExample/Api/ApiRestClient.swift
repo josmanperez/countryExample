@@ -20,24 +20,24 @@ class ApiRestClient<T:Decodable>: ApiRest {
     /// Method to request
     /// - Returns: CompletionHandler with a tuple of Bool regarding the success and object result that conforms protocol Decodable
     func request(completionHandler: @escaping ((Bool, T?) -> Void)) {
-        Alamofire.request(self.urlServer).responseJSON { response in
-            
-            if response.result.isSuccess {
-                guard let data = response.data else {
-                    completionHandler(false, nil)
-                    return
-                }
-                let decoder = JSONDecoder()
-                do {
-                    let results = try decoder.decode(T.self, from: data)
-                    completionHandler(true, results)
-                } catch {
-                    completionHandler(false, nil)
-                }
-            } else {
-                completionHandler(false, nil)
-            }
-            
-        }
+//        Alamofire.request(self.urlServer).responseJSON { response in
+//            
+//            if response.result.isSuccess {
+//                guard let data = response.data else {
+//                    completionHandler(false, nil)
+//                    return
+//                }
+//                let decoder = JSONDecoder()
+//                do {
+//                    let results = try decoder.decode(T.self, from: data)
+//                    completionHandler(true, results)
+//                } catch {
+//                    completionHandler(false, nil)
+//                }
+//            } else {
+//                completionHandler(false, nil)
+//            }
+//            
+//        }
     }
 }

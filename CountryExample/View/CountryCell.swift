@@ -11,6 +11,7 @@ import UIKit
 class CountryCell: UICollectionViewCell {
     
     static let reuseIdentifier = "countryCell"
+    static let nibName = "CountryCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()

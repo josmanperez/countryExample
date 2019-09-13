@@ -1,1 +1,5 @@
 CountryExample.xcodeproj/
+.DS_Store
+CountryExample/apiKeys.plist
+apiKeys.plist
+CountryExample/apiKeys.plist
