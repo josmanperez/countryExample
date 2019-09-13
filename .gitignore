@@ -3,3 +3,6 @@ CountryExample.xcodeproj/
 CountryExample/apiKeys.plist
 apiKeys.plist
 CountryExample/apiKeys.plist
+CountryExample/apiKeys.plist
+Podfile.lock
+Pods/
