@@ -8,17 +8,26 @@
 
 import Foundation
 
-
+/// Model class to store Countries
 class Country:Decodable {
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case capital
+        case region
+        case subregion
+        case population
+        case latlng
+        case nativeName
+        case flag = "alpha2Code"
+    }
     
     var name: String
     var capital: String
     var region: String
     var subregion: String
     var population: Int
-    var latlong: [Float]
+    var latlng: [Float]
     var nativeName: String?
-    
-    
-    
+    var flag: String
 }

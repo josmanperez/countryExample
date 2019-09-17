@@ -9,5 +9,6 @@
 protocol ApiRest {
     associatedtype T
     var urlServer: String { get }
+    var urlKey: String? { get }
     func request(completionHandler: @escaping ((Bool, T?) -> Void))
 }
