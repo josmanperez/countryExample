@@ -6,3 +6,5 @@ CountryExample/apiKeys.plist
 CountryExample/apiKeys.plist
 Podfile.lock
 Pods/
+CountryExample.xcworkspace
+CountryExample.xcworkspace/xcuserdata/*
