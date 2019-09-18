@@ -1,5 +1,5 @@
 //
-//  FileManager.swift
+//  FileReadManager.swift
 //  CountryExample
 //
 //  Created by Josman Pérez Expósito on 13/09/2019.
@@ -26,10 +26,11 @@ struct FileReadManagerError: Error {
 /// For retrieving Api Keys
 class FileReadManager {
     
-    fileprivate enum ApiKey: String {
+    enum ApiKey: String {
         case apiKeys
         case plist
-        case restapi 
+        case restapikey
+        case restapiurl
     }
     
     static let shared: FileReadManager = FileReadManager()
@@ -37,19 +38,20 @@ class FileReadManager {
     private init() { }
     
     /// Function to retrieve api keys to used them in the rest api requests
-    /// - Returns: Optional string with api key for request the country list
+    /// - Returns: Optional string with api key for request based on key
+    /// - Parameters: key `ApiKey` to retrieve value
     /// - Throws: pathNotFound, infoPlistNotFound and keyNotFound
-    func getApiKey() throws -> String {
+    func getApiValue(with key: ApiKey) throws -> String {
         guard let pathToInfoPlist = Bundle.main.path(forResource: ApiKey.apiKeys.rawValue, ofType: ApiKey.plist.rawValue) else {
             throw FileReadManagerError(description: "The resource \(ApiKey.apiKeys.rawValue) has not been found on the main bundle path", kind: .pathNotFound)
         }
         guard let apiDictionary = NSDictionary(contentsOfFile: pathToInfoPlist) else {
             throw FileReadManagerError(description: "There is no dictionary asociated to the \(ApiKey.apiKeys.rawValue) plist file", kind: .infoPlistMalformed)
         }
-        guard let key = apiDictionary[ApiKey.restapi.rawValue] as? String else {
-            throw FileReadManagerError(description: "The key \(ApiKey.restapi.rawValue) is not found on the \(ApiKey.apiKeys.rawValue) dictionary", kind: .keyNotFound)
+        guard let _key = apiDictionary[key.rawValue] as? String else {
+            throw FileReadManagerError(description: "The key \(key.rawValue) is not found on the \(ApiKey.apiKeys.rawValue) dictionary", kind: .keyNotFound)
         }
-        return key
+        return _key
     }
     
 }

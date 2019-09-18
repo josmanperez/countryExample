@@ -11,9 +11,15 @@ import UIKit
 class CountryCollectionViewController: UICollectionViewController {
     
     let apiRequest: ApiRestClient<Array<Country>> = {
-        let api = ApiRestClient<Array<Country>>(urlServer: "https://restcountries-v1.p.rapidapi.com/all")
-        api.urlKey = "9326145ca0msha8b5d860debad48p145374jsn05e76cff94cc"
-        return api
+        do {
+            let url = try FileReadManager.shared.getApiValue(with: .restapiurl)
+            let apikey = try FileReadManager.shared.getApiValue(with: .restapikey)
+            let api = ApiRestClient<Array<Country>>(urlServer: url)
+            api.urlKey = apikey
+            return api
+        } catch {
+            return ApiRestClient<Array<Country>>(urlServer: "")
+        }
     }()
     var results: [Country]?
     fileprivate let sectionInsets = UIEdgeInsets(top: 20.0,
@@ -27,27 +33,21 @@ class CountryCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         
         registerCell()
-        
-        do {
-            try print(FileReadManager.shared.getApiKey())
-        } catch let e as FileReadManagerError {
-            print(e.description)
-        } catch {
-            print("other error")
-        }
-        
+        fetchPropertyList()
+    
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         if !Connectivity.shared.isAvailable() {
             showToast(title: "error".localizedString(), message: "no_internet".localizedString())
         }
-        
-        fetchPropertyList()
-    
     }
     
     // - MARK: Downloads
     
     /// Function to download the country list in the background
     @objc func fetchPropertyList() {
+        startActivityIndicator()
         DispatchQueue.global(qos: .userInteractive).async {
             self.apiRequest.request { (success, items) in
                 DispatchQueue.main.async {
@@ -55,11 +55,9 @@ class CountryCollectionViewController: UICollectionViewController {
                         self.results = items
                         self.collectionView.reloadData()
                     } else {
-                        
                         self.showToast(title: "error".localizedString(), message: "error_fetching".localizedString())
                     }
-                    //self.isLoading(active: false)
-                    //self.refresh.endRefreshing()
+                    Loading.stop()
                 }
             }
         }
@@ -68,6 +66,13 @@ class CountryCollectionViewController: UICollectionViewController {
     
     // - MARK: Views
     
+    func startActivityIndicator() {
+        let y = self.view.frame.height
+        let frame = CGRect(origin: CGPoint(x: view.frame.origin.x, y: y), size: view.frame.size)
+        if let spinnerView = Loading.starts(frame: frame) {
+            view.addSubview(spinnerView)
+        }
+    }
     
     /// register the collectionView Cell
     func registerCell() {

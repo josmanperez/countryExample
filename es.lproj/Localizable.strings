@@ -10,4 +10,9 @@
 "SubRegion"="SubRegión";
 "Population"="Población";
 "No_country_found"="No se ha encontrado localización";
+"error" = "Error";
+"dismiss" = "Descartar";
+"error_fetching" = "Ha ocurrido un error con el servidor.\n Inténtalo de nuevo más tarde";
+"refresh_property_list" = "cargando países...";
+"no_internet" = "Parece que no tienes conexión a internet, inténtalo de nuevo más tarde";
 
