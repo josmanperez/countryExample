@@ -129,7 +129,7 @@ extension CountryCollectionViewController: UICollectionViewDelegateFlowLayout {
 
 
         let witdh = (collectionView.frame.width - (sectionInsets.left + sectionInsets.right) * 2) / numberOfItems
-        return CGSize(width: witdh, height: 160)
+        return CGSize(width: witdh, height: CountryCell.cellHeight)
     }
 }
 

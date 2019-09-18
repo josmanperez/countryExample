@@ -19,6 +19,20 @@ extension String {
 
 extension UIView {
     
+    func cornerRadius(with size: CGFloat) {
+        self.layer.cornerRadius = size
+        self.clipsToBounds = true
+    }
+    
+    func roundCorners(usingCorners corners: UIRectCorner, cornerRadius: CGSize) {
+        
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: cornerRadius)
+        let maskLayer = CAShapeLayer()
+        maskLayer.path = path.cgPath
+        self.layer.mask = maskLayer
+    }
+    
+    
     func roundedCornersView() {
         let maskPath = UIBezierPath(roundedRect: bounds,
                                     byRoundingCorners: [.topLeft , .topRight, .bottomLeft, .bottomRight],
@@ -27,5 +41,16 @@ extension UIView {
         maskLayer.frame = bounds
         maskLayer.path = maskPath.cgPath
         layer.mask = maskLayer
+    }
+    
+    /// Function to set a gradient for the background cells and round corners
+    func setGradientBackground(colorTop: UIColor, colorBottom: UIColor) {
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [colorBottom.cgColor, colorTop.cgColor]
+        gradientLayer.startPoint = CGPoint(x: 0.5, y: 1.0)
+        gradientLayer.endPoint = CGPoint(x: 0.5, y: 0.0)
+        gradientLayer.locations = [0, 1]
+        gradientLayer.frame = bounds
+        layer.insertSublayer(gradientLayer, at: 0)
     }
 }

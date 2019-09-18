@@ -13,8 +13,16 @@ class CountryDetailViewController: UIViewController {
     
     var country: Country?
 
+    @IBOutlet weak var backgroundCloseButton: UIView! {
+        didSet {
+            self.backgroundCloseButton.cornerRadius(with: self.backgroundCloseButton.frame.size.width / 2)
+        }
+    }
+    @IBOutlet weak var countryNameBackgroundView: UIView!
+    @IBOutlet weak var countryDetailView: UIView!
     @IBOutlet weak var countryMap: MKMapView!
     @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var originalName: UILabel!
     @IBOutlet weak var capitalLabel: UILabel! {
         didSet {
             capitalLabel.text = "Capital".localizedString()
@@ -38,7 +46,12 @@ class CountryDetailViewController: UIViewController {
             populationLabel.text = "Population".localizedString()
         }
     }
+    @IBOutlet weak var mapViewBackground: UIView!
     @IBOutlet weak var population: UILabel!
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     
     override func viewDidLoad() {
@@ -52,19 +65,27 @@ class CountryDetailViewController: UIViewController {
             dismiss(animated: true, completion: nil)
             return
         }
+        countryNameBackgroundView.cornerRadius(with: 10.0)
+        countryDetailView.cornerRadius(with: 10.0)
+        view.setGradientBackground(colorTop: Constants.topColor, colorBottom: Constants.bottomColor)
         configureMap(with: _country)
-        name.text = _country.name
-        capital.text = _country.capital
-        region.text = _country.region
-        subregion.text = _country.subregion
+        name.text = _country.name.isEmpty ? "-" : _country.name
+        capital.text = _country.capital.isEmpty ? "-" : _country.capital
+        region.text = _country.region.isEmpty ? "-" : _country.region
+        subregion.text = _country.subregion.isEmpty ? "-" : _country.subregion
+        if let _nativeName = _country.nativeName {
+            originalName.text = _nativeName
+        } else {
+            originalName.isHidden = true
+        }
         
         let numberFormatter = NumberFormatter()
         numberFormatter.usesGroupingSeparator = true
-        numberFormatter.numberStyle = .ordinal
+        numberFormatter.numberStyle = .decimal
         numberFormatter.locale = Locale.current
         
         let populationString = numberFormatter.string(from: NSNumber(value: _country.population))
-        population.text = populationString ?? ""
+        population.text = populationString ?? "-"
         
     }
     
@@ -74,6 +95,7 @@ class CountryDetailViewController: UIViewController {
     /// This has to be done on a background thread in order to not overload the mainthread
     /// And not freeze user interface
     fileprivate func configureMap(with country: Country) {
+        mapViewBackground.cornerRadius(with: 10.0)
         // Create a loading view
         let spinner = UIActivityIndicatorView(frame: CGRect.zero)
         spinner.backgroundColor = UIColor.white.withAlphaComponent(0.8)
@@ -119,7 +141,7 @@ class CountryDetailViewController: UIViewController {
     }
     
     fileprivate func centerMapOnLocation(location: CLLocation) {
-        let regionRadius: CLLocationDistance = 50000
+        let regionRadius: CLLocationDistance = 1000000
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
                                                   latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         self.countryMap.setRegion(coordinateRegion, animated: true)
