@@ -16,7 +16,13 @@ class CountryCollectionViewController: UICollectionViewController {
         return api
     }()
     var results: [Country]?
-
+    fileprivate let sectionInsets = UIEdgeInsets(top: 20.0,
+                                                 left: 10.0,
+                                                 bottom: 20.0,
+                                                 right: 10.0)
+    fileprivate let numberOfItems:CGFloat = 3
+    static let showDetailSegueIdentifier = "showDetail"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -35,9 +41,7 @@ class CountryCollectionViewController: UICollectionViewController {
         }
         
         fetchPropertyList()
-        
-        
-        
+    
     }
     
     // - MARK: Downloads
@@ -78,6 +82,14 @@ class CountryCollectionViewController: UICollectionViewController {
         alert.addAction(UIAlertAction(title: "dismiss".localizedString(), style: .default))
         present(alert, animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == CountryCollectionViewController.showDetailSegueIdentifier {
+            if let dVC = segue.destination as? CountryDetailViewController, let _country = sender as? Country {
+                dVC.country = _country
+            }
+        }
+    }
 
 
 }
@@ -102,21 +114,22 @@ extension CountryCollectionViewController {
         }
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let country = results?[indexPath.row]
+        performSegue(withIdentifier: CountryCollectionViewController.showDetailSegueIdentifier, sender: country)
+    }
     
 }
 
 extension CountryCollectionViewController: UICollectionViewDelegateFlowLayout {
-    
+
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        
-        //let witdh = (collectionView.frame.width - (sectionInsets.left + sectionInsets.right)) / numberOfItems
-        
-        //return CGSize(width: witdh, height: collectionView.frame.height)
-        
-        return CGSize(width: 130, height: 160)
+
+
+        let witdh = (collectionView.frame.width - (sectionInsets.left + sectionInsets.right) * 2) / numberOfItems
+        return CGSize(width: witdh, height: 160)
     }
 }
 

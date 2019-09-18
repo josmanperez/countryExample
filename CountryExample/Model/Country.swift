@@ -27,7 +27,7 @@ class Country:Decodable {
     var region: String
     var subregion: String
     var population: Int
-    var latlng: [Float]
+    var latlng: [Double]?
     var nativeName: String?
     var flag: String
 }

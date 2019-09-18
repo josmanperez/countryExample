@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  CountryExample
+
+  Created by Josman Pérez Expósito on 18/09/2019.
+  Copyright © 2019 personal. All rights reserved.
+*/
+"Capital"="Capital";
+"Region"="Región";
+"SubRegion"="SubRegión";
+"Population"="Población";
+"No_country_found"="No se ha encontrado localización";
+

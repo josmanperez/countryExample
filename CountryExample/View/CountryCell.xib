@@ -32,22 +32,28 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Gsr-EQ-4bP">
                                 <rect key="frame" x="8" y="85" width="137" height="45"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del país" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lup-m9-Tu8">
-                                        <rect key="frame" x="0.0" y="0.0" width="97" height="18"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre del país" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lup-m9-Tu8">
+                                        <rect key="frame" x="0.0" y="0.0" width="137" height="18"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="15"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fp5-Ax-h8g">
-                                        <rect key="frame" x="0.0" y="28" width="40" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Capital" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fp5-Ax-h8g">
+                                        <rect key="frame" x="0.0" y="28" width="137" height="17"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="lup-m9-Tu8" firstAttribute="leading" secondItem="Gsr-EQ-4bP" secondAttribute="leading" id="1jq-Dc-m0v"/>
+                                    <constraint firstItem="fp5-Ax-h8g" firstAttribute="leading" secondItem="Gsr-EQ-4bP" secondAttribute="leading" id="FpE-Xc-X9G"/>
+                                    <constraint firstAttribute="trailing" secondItem="lup-m9-Tu8" secondAttribute="trailing" id="Vbe-cU-evL"/>
+                                    <constraint firstAttribute="trailing" secondItem="fp5-Ax-h8g" secondAttribute="trailing" id="rI7-yx-RdE"/>
+                                </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.14901960780000001" green="0.27450980390000002" blue="0.32549019610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="r4b-oJ-02T" firstAttribute="top" secondItem="L0U-LV-iOp" secondAttribute="top" constant="20" id="H9e-UL-dbx"/>
                             <constraint firstItem="r4b-oJ-02T" firstAttribute="centerX" secondItem="L0U-LV-iOp" secondAttribute="centerX" id="PcJ-pt-Zqo"/>

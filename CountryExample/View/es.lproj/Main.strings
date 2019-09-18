@@ -1,0 +1,27 @@
+
+/* Class = "UILabel"; text = "Region"; ObjectID = "7cu-cQ-xOL"; */
+"7cu-cQ-xOL.text" = "Region";
+
+/* Class = "UILabel"; text = "Name of the country"; ObjectID = "GkO-qh-MVf"; */
+"GkO-qh-MVf.text" = "Name of the country";
+
+/* Class = "UILabel"; text = "10000"; ObjectID = "IGL-be-XUy"; */
+"IGL-be-XUy.text" = "10000";
+
+/* Class = "UILabel"; text = "Region"; ObjectID = "SgF-FK-e8t"; */
+"SgF-FK-e8t.text" = "Region";
+
+/* Class = "UILabel"; text = "Sub-region"; ObjectID = "Zkm-oy-nZk"; */
+"Zkm-oy-nZk.text" = "Sub-region";
+
+/* Class = "UILabel"; text = "Population"; ObjectID = "eZJ-u8-mc1"; */
+"eZJ-u8-mc1.text" = "Population";
+
+/* Class = "UILabel"; text = "Capital"; ObjectID = "lVD-hP-1vv"; */
+"lVD-hP-1vv.text" = "Capital";
+
+/* Class = "UILabel"; text = "Sub Region"; ObjectID = "mXl-Rb-FP7"; */
+"mXl-Rb-FP7.text" = "Sub Region";
+
+/* Class = "UILabel"; text = "Capital"; ObjectID = "qS4-Zm-5X8"; */
+"qS4-Zm-5X8.text" = "Capital";
