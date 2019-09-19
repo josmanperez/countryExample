@@ -67,8 +67,7 @@ class CountryCollectionViewController: UICollectionViewController {
     // - MARK: Views
     
     func startActivityIndicator() {
-        let y = self.view.frame.height
-        let frame = CGRect(origin: CGPoint(x: view.frame.origin.x, y: y), size: view.frame.size)
+        let frame = CGRect(origin: collectionView.frame.origin, size: collectionView.frame.size)
         if let spinnerView = Loading.starts(frame: frame) {
             view.addSubview(spinnerView)
         }
@@ -135,6 +134,10 @@ extension CountryCollectionViewController: UICollectionViewDelegateFlowLayout {
 
         let witdh = (collectionView.frame.width - (sectionInsets.left + sectionInsets.right) * 2) / numberOfItems
         return CGSize(width: witdh, height: CountryCell.cellHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return sectionInsets
     }
 }
 
