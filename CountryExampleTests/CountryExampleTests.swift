@@ -83,6 +83,7 @@ class CountryExampleTests: XCTestCase {
         super.tearDown()
     }
     
+    /// Creates a country of a JSON Mock
     func testCreateCountry() {
         do {
             let decoder = JSONDecoder()
@@ -99,32 +100,37 @@ class CountryExampleTests: XCTestCase {
         }
     }
     
-    // Asynchronous test: success fast, failure slow
-    func testValidCallToiTunesGetsHTTPStatusCode200() {
-        // given
-        let url =
-            URL(string: "https://itunes.apple.com/search?media=music&entity=song&term=abba")
-        // 1
-        let promise = expectation(description: "Status code: 200")
-        
-        // when
-        let dataTask = sut.dataTask(with: url!) { data, response, error in
-            // then
-            if let error = error {
-                XCTFail("Error: \(error.localizedDescription)")
+    /// Asynchronous test request 200
+    func testValidCallGetsHTTPStatusCode200() {
+        do {
+            let _key = try FileReadManager.shared.getApiValue(with: .restapikey)
+            let _url = try FileReadManager.shared.getApiValue(with: .restapiurl)
+            guard let url = URL(string: _url) else {
+                XCTFail("No url")
                 return
-            } else if let statusCode = (response as? HTTPURLResponse)?.statusCode {
-                if statusCode == 200 {
-                    // 2
-                    promise.fulfill()
-                } else {
-                    XCTFail("Status code: \(statusCode)")
+            }
+            
+            var request = URLRequest(url: url)
+            request.addValue(_key, forHTTPHeaderField: Constants.headerCountryApiKey)
+            let promise = expectation(description: "Status code: 200")
+            
+            let dataTask = sut.dataTask(with: request) { data, response, error in
+                if let error = error {
+                    XCTFail("Error: \(error.localizedDescription)")
+                    return
+                } else if let statusCode = (response as? HTTPURLResponse)?.statusCode {
+                    if statusCode == 200 {
+                        promise.fulfill()
+                    } else {
+                        XCTFail("Status code: \(statusCode)")
+                    }
                 }
             }
+            dataTask.resume()
+            wait(for: [promise], timeout: 5)
+        } catch let e {
+            XCTFail(e.localizedDescription)
         }
-        dataTask.resume()
-        // 3
-        wait(for: [promise], timeout: 5)
     }
 
 

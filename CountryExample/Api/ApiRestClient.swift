@@ -11,6 +11,8 @@ import Alamofire
 /// Class for handle the Rest API request
 class ApiRestClient<T:Decodable>: ApiRest {
     
+    
+    
     var urlKey: String?
     var urlServer: String
     
@@ -24,7 +26,7 @@ class ApiRestClient<T:Decodable>: ApiRest {
         var headers: HTTPHeaders?
         if let _apikey = urlKey {
             headers = [
-                "x-rapidapi-key": _apikey,
+                Constants.headerCityRequest: _apikey,
                 "Accept": "application/json"
             ]
         }

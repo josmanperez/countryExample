@@ -11,6 +11,8 @@ import UIKit
 
 class Constants {
     
+    static let headerCountryApiKey: String = "x-rapidapi-key"
+    
     static let defautFlag = "defaultFlag"
     static let topColor = UIColor(red: 0/255, green: 142/255, blue: 155/255, alpha: 1.0)
     static let bottomColor = UIColor(red: 44/255, green: 115/255, blue: 210/255, alpha: 1.0)
