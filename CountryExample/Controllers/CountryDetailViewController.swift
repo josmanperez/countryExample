@@ -12,7 +12,7 @@ import MapKit
 class CountryDetailViewController: UIViewController {
     
     var country: Country?
-
+    
     @IBOutlet weak var backgroundCloseButton: UIView! {
         didSet {
             self.backgroundCloseButton.cornerRadius(with: self.backgroundCloseButton.frame.size.width / 2)
@@ -108,27 +108,26 @@ class CountryDetailViewController: UIViewController {
         NSLayoutConstraint(item: spinner, attribute: .bottom, relatedBy: .equal, toItem: countryMap, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
         NSLayoutConstraint(item: spinner, attribute: .top, relatedBy: .equal, toItem: countryMap, attribute: .top, multiplier: 1, constant: 0).isActive = true
         
-        // Call the background thread to search for the location
+        guard let _latitude = country.location?.first, let _longitude = country.location?.last else {
+            let view = UIView(frame: self.countryMap.frame)
+            view.translatesAutoresizingMaskIntoConstraints = false
+            view.backgroundColor = UIColor.white
+            view.alpha = 0.8
+            let label = UILabel()
+            label.text = "No_country_found".localizedString()
+            label.font = UIFont(name: "Helvetica-Neue", size: 5)
+            view.addSubview(label)
+            label.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint(item: label, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
+            NSLayoutConstraint(item: label, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
+            self.countryMap.addSubview(view)
+            NSLayoutConstraint(item: view, attribute: .leading, relatedBy: .equal, toItem: self.countryMap, attribute: .leading, multiplier: 1, constant: 0).isActive = true
+            NSLayoutConstraint(item: view, attribute: .trailing, relatedBy: .equal, toItem: self.countryMap, attribute: .trailing, multiplier: 1, constant: 0).isActive = true
+            NSLayoutConstraint(item: view, attribute: .bottom, relatedBy: .equal, toItem: self.countryMap, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
+            NSLayoutConstraint(item: view, attribute: .top, relatedBy: .equal, toItem: self.countryMap, attribute: .top, multiplier: 1, constant: 0).isActive = true
+            return
+        }
         DispatchQueue.global(qos: .background).async {
-            guard let _latitude = country.latlng?[0], let _longitude = country.latlng?[1] else {
-                let view = UIView(frame: self.countryMap.frame)
-                view.translatesAutoresizingMaskIntoConstraints = false
-                view.backgroundColor = UIColor.white
-                view.alpha = 0.8
-                let label = UILabel()
-                label.text = "No_country_found".localizedString()
-                label.font = UIFont(name: "Helvetica-Neue", size: 5)
-                view.addSubview(label)
-                label.translatesAutoresizingMaskIntoConstraints = false
-                NSLayoutConstraint(item: label, attribute: .centerX, relatedBy: .equal, toItem: view, attribute: .centerX, multiplier: 1, constant: 0).isActive = true
-                NSLayoutConstraint(item: label, attribute: .centerY, relatedBy: .equal, toItem: view, attribute: .centerY, multiplier: 1, constant: 0).isActive = true
-                self.countryMap.addSubview(view)
-                NSLayoutConstraint(item: view, attribute: .leading, relatedBy: .equal, toItem: self.countryMap, attribute: .leading, multiplier: 1, constant: 0).isActive = true
-                NSLayoutConstraint(item: view, attribute: .trailing, relatedBy: .equal, toItem: self.countryMap, attribute: .trailing, multiplier: 1, constant: 0).isActive = true
-                NSLayoutConstraint(item: view, attribute: .bottom, relatedBy: .equal, toItem: self.countryMap, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
-                NSLayoutConstraint(item: view, attribute: .top, relatedBy: .equal, toItem: self.countryMap, attribute: .top, multiplier: 1, constant: 0).isActive = true
-                return
-            }
             let location = CLLocation(latitude: _latitude, longitude: _longitude)
             let artwork = MapHelper(title: country.name, capital: country.capital, coordinate: CLLocationCoordinate2D(latitude: _latitude, longitude: _longitude))
             DispatchQueue.main.async { [weak self] in

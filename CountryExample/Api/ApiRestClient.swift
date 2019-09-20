@@ -26,7 +26,7 @@ class ApiRestClient<T:Decodable>: ApiRest {
         var headers: HTTPHeaders?
         if let _apikey = urlKey {
             headers = [
-                Constants.headerCityRequest: _apikey,
+                Constants.headerCountryApiKey: _apikey,
                 "Accept": "application/json"
             ]
         }

@@ -9,7 +9,7 @@
 import Foundation
 
 /// Model class to store Countries
-class Country:Decodable {
+class Country: Decodable {
     
     enum CodingKeys: String, CodingKey {
         case name
@@ -17,7 +17,7 @@ class Country:Decodable {
         case region
         case subregion
         case population
-        case latlng
+        case location = "latlng"
         case nativeName
         case flag = "alpha2Code"
     }
@@ -27,7 +27,7 @@ class Country:Decodable {
     var region: String
     var subregion: String
     var population: Int
-    var latlng: [Double]?
+    var location: [Double]?
     var nativeName: String?
     var flag: String
 }
