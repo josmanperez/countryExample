@@ -59,7 +59,13 @@ class CountryDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
-        
+        configureBackgroundImage()
+
+    }
+    
+    // - MARK: Configure View
+    
+    func configureBackgroundImage() {
         let unsplash = Unsplash(name: country?.name.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "")
         unsplash.getUrl {
             url in
@@ -69,7 +75,6 @@ class CountryDetailViewController: UIViewController {
                 self.backgroundImage.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
             }, completion: nil)
         }
-
     }
     
     /// Configure view of controller
