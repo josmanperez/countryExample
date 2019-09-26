@@ -71,12 +71,22 @@ class CountryCollectionViewController: UICollectionViewController {
     // MARK: - Views
     
     func configureSearchController() {
+        
+        if #available(iOS 13.0, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.backgroundColor = Constants.bottomColor
+            appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+            navigationItem.standardAppearance = appearance
+            navigationItem.scrollEdgeAppearance = appearance
+        }
+        
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "search_cities".localizedString()
+        UINavigationBar.appearance().tintColor = .white
         searchController.searchBar.setPlaceholder(textColor: .white)
         navigationItem.title = "countries".localizedString()
-        //searchController.searchBar.setClearButton(color: .white)
+        searchController.searchBar.setClearButton(color: .white)
         searchController.searchBar.tintColor = .white
         navigationItem.searchController = searchController
         definesPresentationContext = true
