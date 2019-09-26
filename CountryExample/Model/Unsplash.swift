@@ -33,7 +33,7 @@ class Unsplash {
         apiRequest.urlServer += "&query=\(name)"
         apiRequest.request { (success, image) in
             if success {
-                closure(image?.results.first?.urls.regular)
+                closure(image?.results.randomElement()?.urls.regular)
             } else {
                 closure(nil)
             }
