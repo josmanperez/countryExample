@@ -22,18 +22,22 @@ class CountryCollectionViewController: UICollectionViewController {
         }
     }()
     var results: [Country]?
+    var filterCountries = [Country]()
     fileprivate let sectionInsets = UIEdgeInsets(top: 20.0,
                                                  left: 10.0,
                                                  bottom: 20.0,
                                                  right: 10.0)
     fileprivate let numberOfItems:CGFloat = 3
     static let showDetailSegueIdentifier = "showDetail"
+    let searchController = UISearchController(searchResultsController: nil)
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         registerCell()
         fetchPropertyList()
+        configureSearchController()
     
     }
     
@@ -43,7 +47,7 @@ class CountryCollectionViewController: UICollectionViewController {
         }
     }
     
-    // - MARK: Downloads
+    // MARK: - Downloads
     
     /// Function to download the country list in the background
     @objc func fetchPropertyList() {
@@ -64,7 +68,19 @@ class CountryCollectionViewController: UICollectionViewController {
     }
     
     
-    // - MARK: Views
+    // MARK: - Views
+    
+    func configureSearchController() {
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "search_cities".localizedString()
+        searchController.searchBar.setPlaceholder(textColor: .white)
+        navigationItem.title = "countries".localizedString()
+        //searchController.searchBar.setClearButton(color: .white)
+        searchController.searchBar.tintColor = .white
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+    }
     
     func startActivityIndicator() {
         let frame = CGRect(origin: collectionView.frame.origin, size: collectionView.frame.size)
@@ -94,7 +110,24 @@ class CountryCollectionViewController: UICollectionViewController {
             }
         }
     }
+    
+    // MARK: - Search
 
+    func searchBarIsEmpty() -> Bool {
+      return searchController.searchBar.text?.isEmpty ?? true
+    }
+      
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        filterCountries = results?.filter({( city : Country) -> Bool in
+        return city.name.lowercased().contains(searchText.lowercased())
+        }) ?? []
+
+      collectionView.reloadData()
+    }
+    
+    func isFiltering() -> Bool {
+      return searchController.isActive && !searchBarIsEmpty()
+    }
 
 }
 
@@ -105,13 +138,21 @@ extension CountryCollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let _result = results else { return 0 }
-        return _result.count
+        if isFiltering() { return filterCountries.count } else {
+            guard let _result = results else { return 0 }
+            return _result.count
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CountryCell.reuseIdentifier, for: indexPath) as? CountryCell, let _country = results?[indexPath.row] {
-            cell.configureCell(with: _country)
+            let country: Country
+            if isFiltering() {
+                country = filterCountries[indexPath.row]
+            } else {
+                country = _country
+            }
+            cell.configureCell(with: country)
             return cell
         } else {
             return UICollectionViewCell()
@@ -119,7 +160,7 @@ extension CountryCollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let country = results?[indexPath.row]
+        let country = isFiltering() ? filterCountries[indexPath.row] : results?[indexPath.row]
         performSegue(withIdentifier: CountryCollectionViewController.showDetailSegueIdentifier, sender: country)
     }
     
@@ -143,5 +184,14 @@ extension CountryCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 10
     }
+}
+
+extension CountryCollectionViewController: UISearchResultsUpdating {
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else { return }
+        filterContentForSearchText(text)
+    }
+    
 }
 

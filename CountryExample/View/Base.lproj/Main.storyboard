@@ -37,7 +37,11 @@
                             <outlet property="delegate" destination="SJd-v8-Lol" id="SfT-j8-lbq"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="9AO-Cg-4rM"/>
+                    <navigationItem key="navigationItem" id="9AO-Cg-4rM">
+                        <barButtonItem key="rightBarButtonItem" title="settings" image="settings" id="jkx-TK-lpb">
+                            <color key="tintColor" white="1" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="yoI-io-5JL" kind="presentation" identifier="showDetail" id="yoy-5l-yU3"/>
                     </connections>
@@ -343,5 +347,6 @@
     </scenes>
     <resources>
         <image name="close" width="50" height="50"/>
+        <image name="settings" width="25" height="25"/>
     </resources>
 </document>
