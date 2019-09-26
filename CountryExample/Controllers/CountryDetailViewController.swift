@@ -8,11 +8,13 @@
 
 import UIKit
 import MapKit
+import Kingfisher
 
 class CountryDetailViewController: UIViewController {
     
     var country: Country?
     
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var backgroundCloseButton: UIView! {
         didSet {
             self.backgroundCloseButton.cornerRadius(with: self.backgroundCloseButton.frame.size.width / 2)
@@ -57,6 +59,17 @@ class CountryDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureView()
+        
+        let unsplash = Unsplash(name: country?.name.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "")
+        unsplash.getUrl {
+            url in
+            guard let _stringUrl = url, let _url = URL(string: _stringUrl) else { return }
+            self.backgroundImage.kf.setImage(with: _url, options: [.transition(.fade(0.5))])
+            UIView.animate(withDuration: 5, delay: 0, options: [.curveEaseInOut], animations: {
+                self.backgroundImage.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+            }, completion: nil)
+        }
+
     }
     
     /// Configure view of controller

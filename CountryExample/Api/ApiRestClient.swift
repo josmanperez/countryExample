@@ -11,8 +11,6 @@ import Alamofire
 /// Class for handle the Rest API request
 class ApiRestClient<T:Decodable>: ApiRest {
     
-    
-    
     var urlKey: String?
     var urlServer: String
     
