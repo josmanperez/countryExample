@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SJd-v8-Lol">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hZ8-88-jqD">
     <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -37,13 +37,14 @@
                             <outlet property="delegate" destination="SJd-v8-Lol" id="SfT-j8-lbq"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" id="9AO-Cg-4rM"/>
                     <connections>
                         <segue destination="yoI-io-5JL" kind="presentation" identifier="showDetail" id="yoy-5l-yU3"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1KN-bY-4re" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773" y="-31"/>
+            <point key="canvasLocation" x="1711.2" y="-31.03448275862069"/>
         </scene>
         <!--Country Detail View Controller-->
         <scene sceneID="sIg-5H-Dv2">
@@ -169,8 +170,8 @@
                                                         </constraints>
                                                     </stackView>
                                                 </subviews>
-                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <color key="tintColor" systemColor="systemFillColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.50196078430000002" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" systemColor="systemFillColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstItem="nP9-Hd-tYG" firstAttribute="leading" secondItem="cbH-ZQ-b2r" secondAttribute="leading" constant="8" id="6KD-kX-6f9"/>
                                                     <constraint firstAttribute="trailing" secondItem="nP9-Hd-tYG" secondAttribute="trailing" constant="8" id="Hlr-Xq-qAf"/>
@@ -318,7 +319,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BWe-Bc-nrt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1746" y="-31"/>
+            <point key="canvasLocation" x="2684" y="-31.03448275862069"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="DBI-gI-X3S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hZ8-88-jqD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="NIw-ws-oOR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.17254901960784313" green="0.45098039215686275" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SJd-v8-Lol" kind="relationship" relationship="rootViewController" id="qNI-cU-HgZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zve-QL-md8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="772" y="-31.03448275862069"/>
         </scene>
     </scenes>
     <resources>
