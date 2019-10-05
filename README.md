@@ -31,7 +31,26 @@ Download or clone the project. In order to work with this project you need an **
 - [x] Create a ``` apiKey.plist ``` file
 - [x] Paste this struccture on the plist: 
 
-``` apiKey.plist ``` 
+``` 
+<plist version="1.0">
+<dict>
+	<key>unsplash</key>
+	<dict>
+        <key>url</key>
+        <string>https://api.unsplash.com/search/photos</string>
+        <key>key</key>
+        <string>your_api_key</string>
+        <key>per_page</key>
+        <string>1</string>
+	</dict>
+	<key>restapikey</key>
+	<string>your_api_key</string>
+	<key>restapiurl</key>
+	<string>https://restcountries-v1.p.rapidapi.com/all</string>
+</dict>
+</plist> 
+``` 
+
 - [x] Run
 ```
 pod install
