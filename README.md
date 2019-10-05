@@ -15,6 +15,7 @@
 - [x] Displays data on two differents screens (city list collectionView and a detail view controller).
 - [x] Display random picture of Unsplash (https://unsplash.com/) in detail view to ilustrate the country. 
 - [x] Uses Apple MapKit to display the location of the property.
+- [x] Documentation of classes and methods are located in docs
 
 ## Requirements
 
