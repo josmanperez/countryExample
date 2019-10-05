@@ -10,7 +10,7 @@ import UIKit
 
 /// Class for creating, starting and stoping an activity indicator in
 /// any view
-open class Loading {
+class Loading {
     
     internal static var spinner: UIActivityIndicatorView?
     internal static var spinnerView: UIView?
