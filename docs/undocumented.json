@@ -1,0 +1,1055 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Api/ApiRest.swift",
+      "line": 9,
+      "symbol": "ApiRest",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Api/ApiRest.swift",
+      "line": 10,
+      "symbol": "ApiRest.T",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Api/ApiRest.swift",
+      "line": 11,
+      "symbol": "ApiRest.urlServer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Api/ApiRest.swift",
+      "line": 12,
+      "symbol": "ApiRest.urlKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Api/ApiRest.swift",
+      "line": 13,
+      "symbol": "ApiRest.request(completionHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Api/ApiRestClient.swift",
+      "line": 14,
+      "symbol": "ApiRestClient.urlKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Api/ApiRestClient.swift",
+      "line": 15,
+      "symbol": "ApiRestClient.urlServer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Api/ApiRestClient.swift",
+      "line": 17,
+      "symbol": "ApiRestClient.init(urlServer:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Api/ApiUnsplashResponse.swift",
+      "line": 11,
+      "symbol": "ApiUnsplashResponse",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Api/ApiUnsplashResponse.swift",
+      "line": 12,
+      "symbol": "ApiUnsplashResponse.results",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/AppDelegate.swift",
+      "line": 14,
+      "symbol": "AppDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/AppDelegate.swift",
+      "line": 17,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/AppDelegate.swift",
+      "line": 22,
+      "symbol": "AppDelegate.applicationWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/AppDelegate.swift",
+      "line": 27,
+      "symbol": "AppDelegate.applicationDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/AppDelegate.swift",
+      "line": 32,
+      "symbol": "AppDelegate.applicationWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/AppDelegate.swift",
+      "line": 36,
+      "symbol": "AppDelegate.applicationDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/AppDelegate.swift",
+      "line": 40,
+      "symbol": "AppDelegate.applicationWillTerminate(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 11,
+      "symbol": "CountryCollectionViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 13,
+      "symbol": "CountryCollectionViewController.apiRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 24,
+      "symbol": "CountryCollectionViewController.results",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 25,
+      "symbol": "CountryCollectionViewController.filterCountries",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 26,
+      "symbol": "CountryCollectionViewController.sectionInsets",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 30,
+      "symbol": "CountryCollectionViewController.numberOfItems",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 31,
+      "symbol": "CountryCollectionViewController.showDetailSegueIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 32,
+      "symbol": "CountryCollectionViewController.searchController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 35,
+      "symbol": "CountryCollectionViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 44,
+      "symbol": "CountryCollectionViewController.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 73,
+      "symbol": "CountryCollectionViewController.configureSearchController()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 95,
+      "symbol": "CountryCollectionViewController.startActivityIndicator()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 116,
+      "symbol": "CountryCollectionViewController.prepare(for:sender:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 126,
+      "symbol": "CountryCollectionViewController.searchBarIsEmpty()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 130,
+      "symbol": "CountryCollectionViewController.filterContentForSearchText(_:scope:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 138,
+      "symbol": "CountryCollectionViewController.isFiltering()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 144,
+      "symbol": "CountryCollectionViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 146,
+      "symbol": "CountryCollectionViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 150,
+      "symbol": "CountryCollectionViewController.collectionView(_:numberOfItemsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 157,
+      "symbol": "CountryCollectionViewController.collectionView(_:cellForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 172,
+      "symbol": "CountryCollectionViewController.collectionView(_:didSelectItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 179,
+      "symbol": "CountryCollectionViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 181,
+      "symbol": "CountryCollectionViewController.collectionView(_:layout:sizeForItemAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 190,
+      "symbol": "CountryCollectionViewController.collectionView(_:layout:insetForSectionAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 194,
+      "symbol": "CountryCollectionViewController.collectionView(_:layout:minimumLineSpacingForSectionAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 199,
+      "symbol": "CountryCollectionViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryCollectionViewController.swift",
+      "line": 201,
+      "symbol": "CountryCollectionViewController.updateSearchResults(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 13,
+      "symbol": "CountryDetailViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 15,
+      "symbol": "CountryDetailViewController.country",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 17,
+      "symbol": "CountryDetailViewController.backgroundImage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 18,
+      "symbol": "CountryDetailViewController.backgroundCloseButton",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 23,
+      "symbol": "CountryDetailViewController.countryNameBackgroundView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 24,
+      "symbol": "CountryDetailViewController.countryDetailView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 25,
+      "symbol": "CountryDetailViewController.countryMap",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 26,
+      "symbol": "CountryDetailViewController.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 27,
+      "symbol": "CountryDetailViewController.originalName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 28,
+      "symbol": "CountryDetailViewController.capitalLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 33,
+      "symbol": "CountryDetailViewController.capital",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 34,
+      "symbol": "CountryDetailViewController.regionLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 39,
+      "symbol": "CountryDetailViewController.region",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 40,
+      "symbol": "CountryDetailViewController.subregionLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 45,
+      "symbol": "CountryDetailViewController.subregion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 46,
+      "symbol": "CountryDetailViewController.populationLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 51,
+      "symbol": "CountryDetailViewController.mapViewBackground",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 52,
+      "symbol": "CountryDetailViewController.population",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 54,
+      "symbol": "CountryDetailViewController.preferredStatusBarStyle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 59,
+      "symbol": "CountryDetailViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 68,
+      "symbol": "CountryDetailViewController.configureBackgroundImage()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 160,
+      "symbol": "CountryDetailViewController.centerMapOnLocation(location:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Controllers/CountryDetailViewController.swift",
+      "line": 169,
+      "symbol": "CountryDetailViewController.close(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Connectivity.swift",
+      "line": 15,
+      "symbol": "Connectivity.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Constant.swift",
+      "line": 12,
+      "symbol": "Constants",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Constant.swift",
+      "line": 14,
+      "symbol": "Constants.headerCountryApiKey",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Constant.swift",
+      "line": 16,
+      "symbol": "Constants.defautFlag",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Constant.swift",
+      "line": 17,
+      "symbol": "Constants.topColor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Constant.swift",
+      "line": 18,
+      "symbol": "Constants.bottomColor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Extensions.swift",
+      "line": 22,
+      "symbol": "UIView.cornerRadius(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Extensions.swift",
+      "line": 27,
+      "symbol": "UIView.roundCorners(usingCorners:cornerRadius:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Extensions.swift",
+      "line": 36,
+      "symbol": "UIView.roundedCornersView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Extensions.swift",
+      "line": 60,
+      "symbol": "UISearchBar.getTextField()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Extensions.swift",
+      "line": 61,
+      "symbol": "UISearchBar.setPlaceholder(textColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Extensions.swift",
+      "line": 62,
+      "symbol": "UISearchBar.setClearButton(color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Extensions.swift",
+      "line": 106,
+      "symbol": "UITextField.placeholderLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Extensions.swift",
+      "line": 108,
+      "symbol": "UITextField.setClearButton(color:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Extensions.swift",
+      "line": 117,
+      "symbol": "UITextField.setPlaceholder(textColor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Extensions.swift",
+      "line": 123,
+      "symbol": "UITextField.getClearButton()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/FileReadManager.swift",
+      "line": 14,
+      "symbol": "FileReadManagerError.ErrorKind",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/FileReadManager.swift",
+      "line": 15,
+      "symbol": "FileReadManagerError.ErrorKind.pathNotFound",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/FileReadManager.swift",
+      "line": 16,
+      "symbol": "FileReadManagerError.ErrorKind.infoPlistMalformed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/FileReadManager.swift",
+      "line": 17,
+      "symbol": "FileReadManagerError.ErrorKind.keyNotFound",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/FileReadManager.swift",
+      "line": 20,
+      "symbol": "FileReadManagerError.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/FileReadManager.swift",
+      "line": 21,
+      "symbol": "FileReadManagerError.kind",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/FileReadManager.swift",
+      "line": 29,
+      "symbol": "FileReadManager.ApiKey",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/FileReadManager.swift",
+      "line": 30,
+      "symbol": "FileReadManager.ApiKey.apiKeys",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/FileReadManager.swift",
+      "line": 31,
+      "symbol": "FileReadManager.ApiKey.plist",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/FileReadManager.swift",
+      "line": 32,
+      "symbol": "FileReadManager.ApiKey.restapikey",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/FileReadManager.swift",
+      "line": 33,
+      "symbol": "FileReadManager.ApiKey.restapiurl",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/FileReadManager.swift",
+      "line": 34,
+      "symbol": "FileReadManager.ApiKey.unsplash",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/FileReadManager.swift",
+      "line": 37,
+      "symbol": "FileReadManager.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Loading.swift",
+      "line": 15,
+      "symbol": "Loading.spinner",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Loading.swift",
+      "line": 16,
+      "symbol": "Loading.spinnerView",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Loading.swift",
+      "line": 18,
+      "symbol": "Loading.style",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Loading.swift",
+      "line": 19,
+      "symbol": "Loading.baseBackColor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/Loading.swift",
+      "line": 20,
+      "symbol": "Loading.baseColor",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/MapHelper.swift",
+      "line": 14,
+      "symbol": "MapHelper.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/MapHelper.swift",
+      "line": 15,
+      "symbol": "MapHelper.capital",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/MapHelper.swift",
+      "line": 16,
+      "symbol": "MapHelper.coordinate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/MapHelper.swift",
+      "line": 18,
+      "symbol": "MapHelper.init(title:capital:coordinate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Helpers/MapHelper.swift",
+      "line": 26,
+      "symbol": "MapHelper.subtitle",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 14,
+      "symbol": "Country.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 15,
+      "symbol": "Country.CodingKeys.name",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 16,
+      "symbol": "Country.CodingKeys.capital",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 17,
+      "symbol": "Country.CodingKeys.region",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 18,
+      "symbol": "Country.CodingKeys.subregion",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 19,
+      "symbol": "Country.CodingKeys.population",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 20,
+      "symbol": "Country.CodingKeys.location",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 21,
+      "symbol": "Country.CodingKeys.nativeName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 22,
+      "symbol": "Country.CodingKeys.flag",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 25,
+      "symbol": "Country.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 26,
+      "symbol": "Country.capital",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 27,
+      "symbol": "Country.region",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 28,
+      "symbol": "Country.subregion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 29,
+      "symbol": "Country.population",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 30,
+      "symbol": "Country.location",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 31,
+      "symbol": "Country.nativeName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Country.swift",
+      "line": 32,
+      "symbol": "Country.flag",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Unsplash.swift",
+      "line": 14,
+      "symbol": "Unsplash.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Unsplash.swift",
+      "line": 15,
+      "symbol": "Unsplash.apiRequest",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Unsplash.swift",
+      "line": 28,
+      "symbol": "Unsplash.init(name:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/Unsplash.swift",
+      "line": 32,
+      "symbol": "Unsplash.getUrl(closure:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/UnsplashImage.swift",
+      "line": 11,
+      "symbol": "UnsplashUrlImage",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/UnsplashImage.swift",
+      "line": 13,
+      "symbol": "UnsplashUrlImage.regular",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/UnsplashImage.swift",
+      "line": 14,
+      "symbol": "UnsplashUrlImage.full",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/UnsplashImage.swift",
+      "line": 15,
+      "symbol": "UnsplashUrlImage.small",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/UnsplashImage.swift",
+      "line": 22,
+      "symbol": "UnsplashImage.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/UnsplashImage.swift",
+      "line": 23,
+      "symbol": "UnsplashImage.CodingKeys.id",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/UnsplashImage.swift",
+      "line": 24,
+      "symbol": "UnsplashImage.CodingKeys.hexColor",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/UnsplashImage.swift",
+      "line": 25,
+      "symbol": "UnsplashImage.CodingKeys.urls",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/UnsplashImage.swift",
+      "line": 28,
+      "symbol": "UnsplashImage.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/UnsplashImage.swift",
+      "line": 29,
+      "symbol": "UnsplashImage.hexColor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/Model/UnsplashImage.swift",
+      "line": 30,
+      "symbol": "UnsplashImage.urls",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/View/CountryCell.swift",
+      "line": 12,
+      "symbol": "CountryCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/View/CountryCell.swift",
+      "line": 14,
+      "symbol": "CountryCell.reuseIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/View/CountryCell.swift",
+      "line": 15,
+      "symbol": "CountryCell.nibName",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/View/CountryCell.swift",
+      "line": 16,
+      "symbol": "CountryCell.cellHeight",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/View/CountryCell.swift",
+      "line": 18,
+      "symbol": "CountryCell.flagIcon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/View/CountryCell.swift",
+      "line": 19,
+      "symbol": "CountryCell.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/View/CountryCell.swift",
+      "line": 20,
+      "symbol": "CountryCell.capital",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/View/CountryCell.swift",
+      "line": 21,
+      "symbol": "CountryCell.region",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/View/CountryCell.swift",
+      "line": 23,
+      "symbol": "CountryCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/View/CountryCell.swift",
+      "line": 27,
+      "symbol": "CountryCell.layoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample/CountryExample/View/CountryCell.swift",
+      "line": 33,
+      "symbol": "CountryCell.configureCell(with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/Josman/Desarrollo/iOS/CountryExample/CountryExample"
+}

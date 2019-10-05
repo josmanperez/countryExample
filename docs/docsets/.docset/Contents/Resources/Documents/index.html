@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html"> Docs</a> (13% documented)</p>
+        <p class="header-right"><a href="https://github.com/josmanperez/countryExample"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html"> Reference</a>
+        <img id="carat" src="img/carat.png" />
+          Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/ApiRestClient.html">ApiRestClient</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/ApiUnsplashResponse.html">ApiUnsplashResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Connectivity.html">Connectivity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Constants.html">Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Country.html">Country</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Country/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CountryCell.html">CountryCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CountryCollectionViewController.html">CountryCollectionViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/CountryDetailViewController.html">CountryDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FileReadManager.html">FileReadManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FileReadManager/ApiKey.html">– ApiKey</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Loading.html">Loading</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/MapHelper.html">MapHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Unsplash.html">Unsplash</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/UnsplashImage.html">UnsplashImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/UnsplashImage/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/UnsplashUrlImage.html">UnsplashUrlImage</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/String.html">String</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UISearchBar.html">UISearchBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UITextField.html">UITextField</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Extensions/UIView.html">UIView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/ApiRest.html">ApiRest</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/FileReadManagerError.html">FileReadManagerError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/FileReadManagerError/ErrorKind.html">– ErrorKind</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <!--![Countries]-->
+
+<p><strong>Countries</strong> is a project to demonstrate the use of several components within iOS framework </p>
+
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="https://github.com/Alamofire/Alamofire/blob/master/Documentation/Usage.md#using-alamofire">Usage</a></li>
+<li><a href="#license">License</a></li>
+</ul>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>[x] Retrieve real data from a server (powered by <a href="https://rapidapi.com/">https://rapidapi.com/</a>)</li>
+<li>[x] Converts JSON data into objects using Codable library.</li>
+<li>[x] Displays data on two differents screens (city list collectionView and a detail view controller).</li>
+<li>[x] Display random picture of Unsplash (<a href="https://unsplash.com/">https://unsplash.com/</a>) in detail view to ilustrate the country.</li>
+<li>[x] Uses Apple MapKit to display the location of the property.</li>
+</ul>
+<h2 id='requirements' class='heading'>Requirements</h2>
+
+<ul>
+<li>iOS 11.0+</li>
+<li>Xcode 10.2+</li>
+<li>Swift 5+</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>Download or clone the project. In order to work with this project you need an <strong>api key</strong> from <em>rapidapi</em> in order to use the web servie. Aditionally if you want to use Unsplash service you also need an Unsplash <strong>api key</strong>. </p>
+<h3 id='instrucctions' class='heading'>Instrucctions</h3>
+
+<ul>
+<li>[x] Create a <code>apiKey.plist</code> file</li>
+<li>[x] Paste this struccture on the plist:</li>
+</ul>
+<pre class="highlight plaintext"><code>&lt;plist version="1.0"&gt;
+&lt;dict&gt;
+    &lt;key&gt;unsplash&lt;/key&gt;
+    &lt;dict&gt;
+        &lt;key&gt;url&lt;/key&gt;
+        &lt;string&gt;https://api.unsplash.com/search/photos&lt;/string&gt;
+        &lt;key&gt;key&lt;/key&gt;
+        &lt;string&gt;your_api_key&lt;/string&gt;
+        &lt;key&gt;per_page&lt;/key&gt;
+        &lt;string&gt;1&lt;/string&gt;
+    &lt;/dict&gt;
+    &lt;key&gt;restapikey&lt;/key&gt;
+    &lt;string&gt;your_api_key&lt;/string&gt;
+    &lt;key&gt;restapiurl&lt;/key&gt;
+    &lt;string&gt;https://restcountries-v1.p.rapidapi.com/all&lt;/string&gt;
+&lt;/dict&gt;
+&lt;/plist&gt; 
+</code></pre>
+
+<ul>
+<li>[x] Run
+<code>
+pod install
+</code></li>
+</ul>
+<h2 id='usage' class='heading'>Usage</h2>
+
+<p>Once starting the app it will retrieve a fixed list of countries and will convert those properties into objects using <code>Decodable</code> library. 
+If you click on one country it will retrieve detailed information about it and will display it on screen. 
+Uses <code>MapKit</code> to show the location of the country on a map.
+Uses a <code>CollectionView</code> to show the list of countries retrieved by the web service.</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>Open Source example project</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="https://josmanperez.com" target="_blank" rel="external">Josman</a>. All rights reserved. (Last updated: 2019-10-05)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
